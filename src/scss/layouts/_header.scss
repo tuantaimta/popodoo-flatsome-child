@@ -1,0 +1,26 @@
+
+header {
+  //font-family: 'Open Sans', sans-serif;
+  background-color: $primary;
+  .header-wrapper {
+    padding-bottom: 1rem;
+    .header-top {
+      width: 80%;
+      margin: auto;
+    }
+    .header-main {
+      background-color: white;
+      max-width: 1640px;
+      margin: auto;
+      width: 80%;
+      padding-bottom: 1rem;
+      border-radius: 16px;
+      max-height: 344px;
+      padding: 1rem 8px;
+      .header-inner {
+
+      }
+    }
+  }
+
+}

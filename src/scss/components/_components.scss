@@ -1,0 +1,45 @@
+/* Reusable components styles */
+ú
+$radius: 8px;
+$transition: 0.25s;
+
+.enh-card {
+  border-radius: $radius;
+  overflow: hidden;
+  background: #fff;
+  .enh-card__link { display:block; color:inherit; text-decoration:none; }
+  .enh-card__media {
+    width:100%; padding-top:66.66%; background-size:cover; background-position:center;
+    transition: transform $transition;
+  }
+  .enh-card__body { padding: 12px; }
+  .enh-card__title { font-size: 1rem; margin:0 0 6px; }
+  .enh-card__price { color:#d23; font-weight:700; }
+  &:hover .enh-card__media { transform: scale(1.04); }
+}
+
+.enh-card--shadow { box-shadow: 0 15px 30px rgba(0,0,0,0.08); }
+.enh-card--border { border:1px solid rgba(0,0,0,0.15); }
+
+.enh-banner {
+  position: relative;
+  overflow: hidden;
+  min-height: 260px;
+  .enh-banner__link { display:block; color:white; text-decoration:none; }
+  .enh-banner__bg {
+    position:absolute;
+    inset:0;
+    background-size:cover;
+    background-position:center;
+    will-change: transform;
+    transition: transform $transition;
+  }
+  .enh-banner__content { position:relative; z-index:2; padding:50px; }
+  .enh-banner__title { font-size:2rem; margin:0 0 10px; }
+  &:hover .enh-banner__bg { transform: scale(1.03); }
+}
+
+.enh-banner__bg--soft { background-color: rgba(0,0,0,0.3); }
+.enh-banner__bg--strong { background-color: rgba(0,0,0,0.55); }
+
+[data-bg] { background-color:#f3f3f3; background-repeat:no-repeat; background-size:cover; background-position:center; }

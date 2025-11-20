@@ -1,0 +1,13 @@
+//main.scss
+@import "base/variables" ;
+@import "base/mixins" ;
+
+@import "components/banner";
+@import "components/button";
+// import SCSS components
+@import "layouts/header";
+
+@import "pages/home";
+body {
+  font-family: 'Open Sans', sans-serif;
+}

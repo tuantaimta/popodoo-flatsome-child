@@ -1,0 +1,53 @@
+// Popodoo override variables for Flatsome
+// Add only variables you want to change here.
+$primary: #7E05CB;
+//$body-font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+//$heading-font-family: 'Poppins', 'Helvetica Neue', Arial, sans-serif;
+
+/* ========================================================================= */
+/* VARIABLES OVERRIDE for Flatsome 3.19 */
+/* ========================================================================= */
+
+// 1. COLORS
+// Ghi đè màu chính (Primary Color)
+$primary-color: #7E05CB; // Ví dụ: Màu cam/đỏ mới
+$secondary-color: #FFD400;
+//$primary-color-alt: darken($primary-color, 10%); // Màu thay thế
+$success-color: #28a745;
+$alert-color: #dc3545;
+$warning-color: #ffc107;
+
+// Ghi đè màu nền (Background Colors)
+$body-bg: #f8f8f8; // Ví dụ: Màu nền sáng hơn
+
+// 2. TYPOGRAPHY (FONT)
+// Ghi đè các biến Font Family
+$font-family-sans-serif: 'Roboto', sans-serif; // Ví dụ: Sử dụng font Roboto
+$font-family-primary: $font-family-sans-serif;
+$font-family-headings: $font-family-sans-serif;
+$font-family-alt: 'Open Sans', sans-serif;
+
+// Ghi đè cỡ chữ cơ bản (Base Font Size)
+$font-size-base: 1rem; // Tương đương 16px (mặc định)
+$font-size-small: 0.85rem;
+
+// 3. WOOCOMMERCE & BUTTONS
+// Ghi đè màu nút Woocommerce
+//$woo-colors: (
+//        primary: $primary-color,
+//        success: $success-color,
+//        warning: $warning-color
+//);
+
+// Ghi đè thuộc tính nút (Button Radius)
+$button-radius: 50px; // Ví dụ: Bo góc 5px cho tất cả nút
+
+// 4. SPACING & GRID
+// Ghi đè khoảng cách
+$grid-gutter-width: 30px; // Ví dụ: Khoảng cách lưới 30px
+$box-padding: 20px;
+
+// 5. HEADER
+// Ghi đè chiều cao Header (Header Height)
+$header-height: 90px;
+$header-height-mobile: 70px;

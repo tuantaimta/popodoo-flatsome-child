@@ -1,0 +1,89 @@
+/* ============================================
+   COMPONENT: Branch Menu
+   ============================================ */
+
+.branch-menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+
+  @media (max-width: 991px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
+
+  /* Column Item */
+  &__column {
+    background: #fff;
+  }
+
+  /* Region Title */
+  &__region-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  /* Province Block */
+  &__province {
+    margin-bottom: 18px;
+
+    /* Province Name */
+    &-title {
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      position: relative;
+      padding-right: 24px;
+      line-height: 1.4;
+
+      /* Arrow Icon */
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 12px;
+        height: 12px;
+        border-right: 2px solid #222;
+        border-bottom: 2px solid #222;
+        transform: translateY(-50%) rotate(45deg);
+        transition: transform 0.25s ease;
+      }
+    }
+
+    /* List of Branches */
+    &-list {
+      list-style: none;
+      padding: 8px 0 0 0;
+      margin: 0;
+
+      li {
+        padding: 4px 0;
+        font-size: 14px;
+      }
+    }
+
+    /* ============ Mobile Collapse ============ */
+    @media (max-width: 767px) {
+      /* Hide list on mobile */
+      &-list {
+        display: none;
+      }
+
+      /* When active -> expand + rotate icon */
+      &.active {
+        .branch-menu__province-title::after {
+          transform: translateY(-50%) rotate(-135deg);
+        }
+
+        .branch-menu__province-list {
+          display: block;
+        }
+      }
+    }
+  }
+}

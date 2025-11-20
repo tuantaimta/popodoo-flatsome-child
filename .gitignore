@@ -1,0 +1,15 @@
+# Node / build
+node_modules/
+npm-debug.log*
+yarn.lock
+pnpm-lock.yaml
+*.log
+
+# Sourcemaps (nếu không HX✨n lưu)
+assets/css/*.map
+
+# Hệ điều hành / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
